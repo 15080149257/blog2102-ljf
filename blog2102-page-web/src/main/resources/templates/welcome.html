@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>博客</title>
+    <link rel="stylesheet" href="../static/css/layui.css">
+    <link rel="stylesheet" href="../myicon/iconfont.css">
+    <link rel="stylesheet" href="../css/layui-page.css">
+</head>
+<body class="layui-layout-body">
+<!--头部-->
+<div class="layui-col-md12" style="height:800px;background: url(../image/head1.jpg) center no-repeat;background-size:100% 100%;">
+    <div class="layui-row " style="padding-top: 40px">
+        <div class="layui-col-md12 head_line_height" align="center">
+            <img src="../image/image1.jpg" class="head_image"/>
+            <div class="head_text_small head_text_color">Lin JunFa</div>
+            <div class="site-demo-button" id="layerDemo" style="margin-bottom: 0;">
+                <button data-method="wechat" class="layui-btn" style="width: 30px;background: none">
+                    <i class="layui-icon layui-icon-login-wechat" style="font-size: 30px; color: #888888;"></i>
+                </button>
+                <button data-method="user" class="layui-btn" style="width: 30px;background: none">
+                    <i class="iconfont" style="font-size: 30px;color: #888888">&#xe605;</i>
+                </button>
+                <button data-method="qq" class="layui-btn" style="width: 30px;background: none">
+                    <i class="layui-icon layui-icon-login-qq" style="font-size: 30px; color: #888888"></i>
+                </button>
+                <button data-method="github" class="layui-btn" style="width: 30px;background: none">
+                    <i class="iconfont" style="font-size: 30px;color: #888888">&#xe601;</i>
+                </button>
+                <button data-method="weibo" class="layui-btn" style="width: 30px;background: none">
+                    <i class="layui-icon layui-icon-login-weibo" style="font-size: 30px;color: #888888"></i>
+                </button>
+            </div>
+            <div class="head_text_in head_text_color" style="margin-top: 10px">古之立大事者，不惟有超世之才，亦必有坚韧不拔之志</div>
+            <hr class="layui-bg-gray head_guide">
+            <div style="padding-top: 20px">
+                <div class="head_text_big head_text_color" style="letter-spacing: 3px">
+                    <div>上善若水。</div>
+                    <div>水善利万物而不争，</div>
+                    <div>处众人之所恶，</div>
+                    <div>故几于道。</div>
+                </div>
+                <div style="padding-top: 20px">
+                    <button class="layui-btn layui-btn-radius layui-btn-primary">
+                        <i class="layui-icon layui-icon-home" style="font-size: 20px; color: #888888"></i>首页
+                    </button>
+                    <button class="layui-btn layui-btn-radius layui-btn-primary">
+                        <i class="layui-icon layui-icon-component" style="font-size: 20px; color: #888888"></i>分类
+                    </button>
+                    <button class="layui-btn layui-btn-radius layui-btn-primary">
+                        <i class="layui-icon layui-icon-note" style="font-size: 20px; color: #888888"></i>标签
+                    </button>
+                    <button class="layui-btn layui-btn-radius layui-btn-primary">
+                        <i class="layui-icon layui-icon-templeate-1" style="font-size: 20px; color: #888888"></i>归档
+                    </button>
+                    <button class="layui-btn layui-btn-radius layui-btn-primary">
+                        <i class="layui-icon layui-icon-at" style="font-size: 20px; color: #888888"></i>关于我
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.main.js"></script>-->
+<script src="../static/layui.all.js"></script>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+<!--[if lt IE 9]>
+<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+    layui.use('layer', function(){ //独立版的layer无需执行这一句
+        var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+
+        //触发事件
+        var active = {
+            wechat: function(){
+                //配置一个透明的询问框
+                layer.msg('<img src="../image/wx.jpg" height="100" width="100"/>', {
+                    time: 20000, //20s后自动关闭
+                    btn: ['立即关闭']
+                });
+            }
+            ,github: function(){
+                //示范一个公告层
+                layer.open({
+                    type: 1
+                    ,title: false //不显示标题栏
+                    ,closeBtn: false
+                    ,area: '300px;'
+                    ,shade: 0.8
+                    ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
+                    ,btn: ['火速围观', '残忍拒绝']
+                    ,btnAlign: 'c'
+                    ,moveType: 1 //拖拽模式，0或者1
+                    ,content: '<div style="padding: 50px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">你知道吗？亲！<br>通过这道传送门，可直接抵达博主的Github仓库哦！<br>如果你觉得很赞的话请给博主点个star哦 ^_^<br></div>'
+                    ,success: function(layero){
+                        var btn = layero.find('.layui-layer-btn');
+                        btn.find('.layui-layer-btn0').attr({
+                            href: 'http://www.layui.com/'
+                            ,target: '_blank'
+                        });
+                    }
+                });
+            }
+            ,qq: function(){
+                //配置一个透明的询问框
+                layer.msg('<img src="../image/qq.jpg" height="100" width="100"/>', {
+                    time: 20000, //20s后自动关闭
+                    btn: ['立即关闭']
+                });
+            }
+            , weibo: function(){
+                //配置一个透明的询问框
+                layer.msg('亲,尚未开通微博哦！！！', {
+                    time: 20000, //20s后自动关闭
+                    btn: ['立即关闭']
+                });
+            }
+            , user: function(){
+                //配置一个透明的询问框
+                layer.msg('亲,尚未开通个人众号哦！！！', {
+                    time: 20000, //20s后自动关闭
+                    btn: ['立即关闭']
+                });
+            }
+
+        };
+
+        $('#layerDemo .layui-btn').on('click', function(){
+            var othis = $(this), method = othis.data('method');
+            active[method] ? active[method].call(this, othis) : '';
+        });
+
+    });
+
+</script>
+</body>
+</html>

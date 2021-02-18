@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1613587844865'); /* IE9 */
+  src: url('iconfont.eot?t=1613587844865#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPIAAsAAAAAB+QAAAN6AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDSIMbATYCJAMMCwgABCAFhG0HOxvmBhHVmwPJfibYtgrWN9yTojQ/gWFccCZ4nvKq91OVnozElXkyfQQbC+rWAVCA5/u/rRMvaaGgkdehn/Uv+4aMN8bJwTX1f+EPuDpfuEQWRYQ9DnA8oIF2WZXIWhg3jF3QEpdDAC/iyEFq123cGguN2U4AGTygXw+sjAHdkCtYCLaKoRpZhIllzDauAwuD38snisQCA1Nhdm3et05vqr+Vt6aa5EZnD0E4nQ1go0ABOYAG6VrpaI+KwjkovFSFbk61oRGMqXxudyDQZDbrDw8MBMSGme0DQAaKGPBWHEGiNKHoqoUP97kN0MB8wD7BzKCQQh+f2qND7K1LvLeleM0pS0tbEWYzh52omOZsG7YmqncczkftXPPbOB60lnURrIpoae3oY3fLHI65rnZOZ8dY38ZFsbH21wd/0Gb7ShG7M2rFgbQVa9K3nw+97EhfezDc6Ww72ZW9wlk82dHm2twGLheH7SG7HbFD77p8f2zrSavTXY/aOd8WXsoqalnaI8iUIZOCMtokJV+5OvLesZZVVXa3GhV7ytHl8m2xkbepX8GMnrO61Zzdzdf2LUhPbyz+Zmw/KhV7dquxvGlACxnXObxJ9Q4Xejy1uYgbc/GABzsaS58+0kga9+nTWATWWBo9Hglq0gOdkKAfGPsuGmtKE93e3br61Sts3/iZ13/XpefTB9dtx/jygbvam3P7qQVZ0bVHN7TqpahaVv3c29Nu18+r5aFSPOp1nB1V21MtnNe3vfmoqmKu9/ekDeXOmrJTP0hIoDrg7qYj1aTfuB4NfBe96OZf+Y/lrQF43GrGtEDSLRMsDOgs/GlyPQlSoolNg9IKr1rU1YuiwQsIGoCX5QE38gTxdLgqVAuCYGWEDAw8iAWFRQqqyTlg4k0J2LCoBl5kU2+0N8EMQSHaE8hiOgAhgINg4MdFUARwA9XkJ2ASxhewESAKvGgrwVN6kyZqvNViVIIW9B+iocnZZrmFuXf066A4LQ4ob+Ql+qDKy3yswwl5ih7Lx9ciDhzTCC1YDYeBYGZKaCQPInNTFK7qRLmhcXPb1GJUghb0H6KhyXnV5Vb4/h39OihuwFU538hLrB+qvOyAdoqpE+5WNlk+vhZx4JhGaIENBytMMFc3SmgkDwOCc1OgSq6rIl9eNb7fGsBrY06ntoYo0Vh/mnxYs/rkowR2vdkAAAA=') format('woff2'),
+  url('iconfont.woff?t=1613587844865') format('woff'),
+  url('iconfont.ttf?t=1613587844865') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1613587844865#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconyonghu-2:before {
+  content: "\e605";
+}
+
+.icongithub:before {
+  content: "\e601";
+}
+

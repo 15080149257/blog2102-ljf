@@ -1,0 +1,49 @@
+.head_text_red{
+    border:1px solid #F00;
+}
+.head_center{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin-top:-9px;
+}
+.head_guide{
+    width: 700px;
+    height: 1px;
+}
+
+
+/*----------------------行间距----------------------*/
+.head_line_height{
+    line-height: 40px;
+}
+
+.head_image{
+    height:150px;
+    width:150px;
+    border-radius: 100%;
+}
+/*----------------------字体----------------------*/
+.head_text_color{
+    color:#f0f0f0;
+}
+.head_text_word_spacing{
+    text-indent : 20px;
+}
+
+.head_text_small{
+    font-size: 20px;
+}
+
+.head_text_in{
+    font-size: 35px;
+}
+
+.head_text_big{     /**粗体*/
+    font-size: 30px;
+    font-weight:700;
+    line-height: 60px;
+}
